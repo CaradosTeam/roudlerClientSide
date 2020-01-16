@@ -1,0 +1,81 @@
+<!-- Roudler-Client Side Test Page by Grano22 -->
+<!doctype HTML>
+<html lang="pl-PL">
+<head>
+<!-- Charset -->
+<meta charset="utf-8">
+<!-- Title -->
+<title>Roudler Client-Side Test Page</title>
+<!-- Styles -->
+<style type="text/css">
+body {margin:0;background:#c9b7b7;}
+div#container {width:100%;display: -webkit-box;display: -webkit-flex;display: -moz-box;display: -ms-flexbox;display: flex;height:100vh;flex-flow: row wrap;align-items:flex-start;align-content:flex-start;} /* flex-wrap: wrap;flex-direction: row;flex-grow: 1;flex-wrap: wrap;align-items: stretch flex-flow: row wrap; */
+div#header {width:calc(100% - 20%);display:inline-block;padding:10px 10%;background:#7d2f2f;border-bottom:2px solid #592727;margin:0;}
+div#header h1 {margin:0;font-weight: bolder;font-size:20px;color:#bf7a7a;float: left;line-height: 35px;}
+nav{float:right;}
+header, main , footer {width:100%;}
+main {align-self: stretch;}
+footer {align-self: flex-end;}
+ul#nav {margin:0;padding:0;list-style: none;width: auto;}
+ul#nav li {border-radius: 12px;display: inline-block;padding:10px;color:#b0a5a5;}
+ul#nav li:hover {cursor: pointer;background:#995757;}
+div#main {display: inline-block;width:calc(100% - 40px);padding:20px;height:100%;} /* 61 */
+div#footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #997171;
+    /*width: calc(100% - 40px); flex: 0 0 100%;*/
+    width:calc(100% - 40px);
+}
+div.footer-box {
+    background: #573f3f;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 5px;
+    max-width: 200px;
+    text-align: center;
+}
+div.footer-box h1 {margin:2px 1px;font-size: 23px;}
+h1 {margin:2px;text-align: center;}
+.centred {margin:auto;}
+</style>
+<!-- Roudler Client-Side -->
+<script type="text/javascript" src="roudler-client/init-roudler.js">
+RoudlerModulesConfig.isRequire_elements = true;
+</script>
+<script type="text/javascript">
+window.onload = wevt=>{
+    let cont = document.getElementById("featuresBox");
+    cont.innerHTML += '<h3>String formater</h3><strong>String.prototype.format(arg, [arg]);</strong><hr>From ${0} ${S1} is your always first output in every programming langauage? to '+"${0} ${S1} is your always first output in every programming langauage?".format("Hello", "World");
+}
+</script>
+</head>
+<body>
+<div id="container">
+<header>
+<div id="header"><h1>Roudler Client-Side Test Site</h1><nav><ul id="nav"><a target="_blank" href="https://github.com/CaradosTeam/roudlerClientSide"><li>Github</li></a><a target="_blank" href="https://sites.google.com/view/roudlerdocumentation/roudler-in-browser/pure-version/debuger"><li>Dokumentacja</li></a></ul></nav></div>
+</header>
+<main>
+<div id="main">
+<h1>Pakiet skryptowy Roudler Client Side<br>(Po stronie klienta)</h1>
+<center><img src="images/roudlerlogoold3min.png"></center>
+<h2>Features</h2>
+<output id="featuresBox"></output>
+</div>
+</main>
+<footer>
+<div id="footer">
+<div class="footer-box">
+<h1>Wersja</h1>
+<strong>0.1</strong>
+</div>
+<div class="footer-box">
+<h1>Wersja językowa</h1>
+Polski
+</div>
+</div>
+</footer>
+</div>
+</body>
+</html>

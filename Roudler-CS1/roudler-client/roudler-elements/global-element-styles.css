@@ -1,0 +1,5 @@
+/* HTMLSectionTag */
+a-tag a, a[rel=tag] {
+    display: inline-block;
+    
+}
