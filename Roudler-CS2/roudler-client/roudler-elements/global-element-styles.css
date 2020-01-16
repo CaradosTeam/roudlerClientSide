@@ -1,0 +1,53 @@
+/* HTMLSectionTag */
+a-tag a, a[rel=tag] {
+    display: inline-block;
+    
+}
+
+/* HTMLModals */
+div.modalContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+
+    background: #BBB;
+}
+
+div.modal {
+    display: block;
+    max-width: 500px;
+    min-width: 200px;
+}
+
+div.modalHeader {
+    cursor: grab;
+    padding: 20px;
+
+    background: #777;
+}
+
+div.modalHeader[in-move] {
+    cursor: move;
+}
+
+div.modalHeader #modalCloseBtn {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+div.modalBody {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+}
+
+div.modalFooter {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+
+    background: #999;
+}
